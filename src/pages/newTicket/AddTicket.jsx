@@ -2,8 +2,15 @@ import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import BreadcrumbPage from '../../components/BreadcrumbPage'
 import TicketForm from '../../components/TicketForm'
+import {shortText} from '../../utils/validation.js'
 
 const initDataForm = {
+  title: "",
+  typeTicketId: "",
+  detail: ""
+}
+
+const initDataError = {
   title: "",
   typeTicketId: "",
   detail: ""
@@ -12,10 +19,20 @@ const initDataForm = {
 const AddTicket = () => {
 
   const [dataForm, setDataForm] = useState(initDataForm);
+  const [dataFormError, setDataFormError] = useState(initDataError);
 
-  const handlerOnSubmit = (e) => {
+  const handlerOnSubmit = async (e) => {
     e.preventDefault();
-    console.log("enviar datos")
+
+    setDataFormError(initDataError);
+
+    const isValid = await shortText(dataForm.title) && dataForm.typeTicketId !== "";
+    !isValid && setDataFormError({
+      ...dataFormError,
+      title: isValid ? "" : "El campo es requerido",
+      typeTicketId: isValid ? "" : "El campo es requerido"
+    })
+    console.log("enviar datos", dataForm);
   }
 
   const handleOnChange = (e) => {
@@ -38,6 +55,7 @@ const AddTicket = () => {
           <TicketForm
             handleOnChange={handleOnChange}
             handlerOnSubmit={handlerOnSubmit}
+            dataFormError={dataFormError}
             dataForm={dataForm}
           />
         </Col>

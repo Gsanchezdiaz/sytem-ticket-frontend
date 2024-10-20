@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Row, Form } from 'react-bootstrap'
 
-const TicketForm = ({ handlerOnSubmit, handleOnChange, dataForm }) => {
+const TicketForm = ({ handlerOnSubmit, handleOnChange, dataForm, dataFormError }) => {
   console.log(dataForm);
   return (
     <div
@@ -14,11 +14,16 @@ const TicketForm = ({ handlerOnSubmit, handleOnChange, dataForm }) => {
             <Form.Control
               type='text'
               name='title'
+              //minLength={10}
+              maxLength={50}
               value={dataForm.title}
               onChange={handleOnChange}
               placeholder='Ingresa un titulo principal'
               required
             />
+            <Form.Text className="text-danger">
+              {dataFormError.title}
+            </Form.Text>
           </Col>
         </Form.Group>
 
