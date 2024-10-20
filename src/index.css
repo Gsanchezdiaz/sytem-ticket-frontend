@@ -5,5 +5,21 @@
 body {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	color: white;
-	background-color: black;
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('https://accounts.smartplus.com.ec/oauth/v2/images/background-sigeco.jpg'); /* Reemplaza con la ruta de tu imagen */
+	background-size: cover; /* Cubre toda el área */
+	background-position: center; /* Centra la imagen */
+	opacity: 0.4; /* Opacidad del 80% */
+	z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
 }

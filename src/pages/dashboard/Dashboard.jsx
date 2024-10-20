@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import TicketTable from '../../components/TicketTable'
 import data_tickets from '../../assets/data-ticket.json'
 import BreadcrumbPage from '../../components/BreadcrumbPage'
@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <Container>
       <Row>
-        <Col className='text-xs'>
+        <Col className=''>
           <BreadcrumbPage page="Dashboard"/>
         </Col>
       </Row>
