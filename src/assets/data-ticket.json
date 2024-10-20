@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "detalle": "Revisión del sistema de inventario",
+    "estado": "Completado",
+    "fechaRegistro": "2024-10-10"
+  },
+  {
+    "id": 2,
+    "detalle": "Actualización de la base de datos",
+    "estado": "En Proceso",
+    "fechaRegistro": "2024-10-12"
+  },
+  {
+    "id": 3,
+    "detalle": "Migración del servidor",
+    "estado": "Pendiente",
+    "fechaRegistro": "2024-10-15"
+  },
+  {
+    "id": 4,
+    "detalle": "Implementación de nueva funcionalidad",
+    "estado": "Completado",
+    "fechaRegistro": "2024-10-18"
+  },
+  {
+    "id": 5,
+    "detalle": "Pruebas de calidad",
+    "estado": "En Proceso",
+    "fechaRegistro": "2024-10-20"
+  },
+  {
+    "id": 6,
+    "detalle": "Revisión del sistema de inventario",
+    "estado": "Completado",
+    "fechaRegistro": "2024-10-10"
+  },
+  {
+    "id": 7,
+    "detalle": "Actualización de la base de datos",
+    "estado": "En Proceso",
+    "fechaRegistro": "2024-10-12"
+  },
+  {
+    "id": 8,
+    "detalle": "Migración del servidor",
+    "estado": "Pendiente",
+    "fechaRegistro": "2024-10-15"
+  },
+  {
+    "id": 9,
+    "detalle": "Implementación de nueva funcionalidad",
+    "estado": "Completado",
+    "fechaRegistro": "2024-10-18"
+  },
+  {
+    "id": 10,
+    "detalle": "Pruebas de calidad",
+    "estado": "En Proceso",
+    "fechaRegistro": "2024-10-20"
+  }
+]

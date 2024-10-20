@@ -1,9 +1,9 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Login from './pages/entry/Login'
 import ResetPassword from './pages/entry/ResetPassword'
 import Home from './pages/default/Home'
+import Dashboard from './pages/dashboard/Dashboard'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <div className='flex'>
       {/* <Login /> */}
       <Home>
-        Dashboard
+        <Dashboard />
       </Home>
       {/* <ResetPassword /> */}
     </div>
