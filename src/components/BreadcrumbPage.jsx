@@ -3,7 +3,7 @@ import { Breadcrumb } from 'react-bootstrap'
 
 const BreadcrumbPage = ({page}) => {
   return (
-    <Breadcrumb className='text-xs'>
+    <Breadcrumb className='text-xs sm:hidden'>
       <Breadcrumb.Item href="#">Inicio</Breadcrumb.Item>
       <Breadcrumb.Item active>{page}</Breadcrumb.Item>
     </Breadcrumb>

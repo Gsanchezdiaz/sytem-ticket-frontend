@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -57,7 +58,7 @@ const Login = () => {
                 <span className='mr-2 text-gray-400'>
                   ¿Olvidaste tu contraseña?
                 </span>
-                <a className='hover:underline' href='#!'>click aqui</a>
+                <Link to="/reset-password" className='hover:underline' href='#!'>click aqui</Link>
                 {/* <Link className='hover:underline' to="/login">Inicia sesión.</Link> */}
               </p>
               {/* 

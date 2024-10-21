@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [onProfile, setOnProfile] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    //localStorage.removeItem('token');
+    navigate('/');
+  }
+
   return (
     <div>
       <nav className="bg-gray-800 w-full">
@@ -35,8 +44,20 @@ const Navbar = () => {
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                  <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
-                  <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tickets</a>
+                  <Link 
+                    to="/home/dashboard" 
+                    className={`${
+                      location.pathname === '/home/dashboard'
+                        ? 'bg-gray-900 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    } rounded-md px-3 py-2 text-sm font-medium`}>Dashboard</Link>
+                  <Link 
+                    to="/home/list-tickets" 
+                    className={`${
+                      location.pathname === '/home/list-tickets'
+                        ? 'bg-gray-900 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    } rounded-md px-3 py-2 text-sm font-medium`}>Tickets</Link>
                   {/* <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
                   <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
                 </div>
@@ -79,7 +100,7 @@ const Navbar = () => {
                     {/* <!-- Active: "bg-gray-100", Not Active: "" --> */}
                     {/* <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-0">Perfil</a>
                     <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-1">Opciones</a> */}
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-2">Cerrar Sesión</a>
+                    <a onClick={handleLogout} className="block px-4 py-2 text-sm text-gray-700 hover:underline cursor-pointer"  role="menuitem" tabIndex="-1" id="user-menu-item-2">Cerrar Sesión</a>
                   </div>)}
               </div>
             </div>
@@ -90,8 +111,20 @@ const Navbar = () => {
         <div className={`${mobileMenu ? 'block' : 'hidden'} sm:hidden`} id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-            <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tickets</a>
+            <Link 
+              to="/home/dashboard" 
+              className={`${
+                location.pathname === '/home/dashboard'
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              } block rounded-md px-3 py-2 text-base font-medium`}>Dashboard</Link>
+            <Link 
+              to="/home/list-tickets" 
+              className={`${
+                location.pathname === '/home/list-tickets'
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+              } block rounded-md px-3 py-2 text-base font-medium`}>Tickets</Link>
             {/* <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
             <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
           </div>

@@ -4,16 +4,24 @@ import BreadcrumbPage from '../../components/BreadcrumbPage'
 import data_tickets from '../../assets/data-ticket.json'
 import MessageHistory from '../../components/MessageHistory'
 import TicketUpdate from '../../components/TicketUpdate'
+import { useParams } from 'react-router-dom';
 
-const ticket = data_tickets[0]
+//const ticket = data_tickets[0]
 
 const Ticket = () => {
 
+    const { id } = useParams()
     const [menssage, setMessage] = useState("")
+    const [ticket, setTicket] = useState({})
 
     useEffect(() => {
-
-    }, [menssage])
+        for (let i = 0; i < data_tickets.length; i++) {
+            if (data_tickets[i].id == id) {
+                setTicket(data_tickets[i])
+                continue
+            }
+        }
+    }, [menssage, id])
 
     const handleOnChange = (e) => {
         const { value } = e.target
