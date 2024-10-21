@@ -6,6 +6,7 @@ import Home from './pages/default/Home'
 import Dashboard from './pages/dashboard/Dashboard'
 import AddTicket from './pages/newTicket/addTicket';
 import ListTicket from './pages/listTicket/ListTicket';
+import Ticket from './pages/ticket/Ticket';
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       <Home>
         {/* <Dashboard /> */}
         {/* <AddTicket /> */}
-        <ListTicket />
+        {/* <ListTicket /> */}
+        <Ticket />
       </Home>
       {/* <ResetPassword /> */}
     </div>

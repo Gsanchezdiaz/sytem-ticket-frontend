@@ -4,7 +4,27 @@
     "detalle": "Revisión de funcionalidad de login",
     "estado": "Pendiente",
     "fechaRegistro": "2024-10-20",
-    "asunto": "Login no funciona en el navegador"
+    "asunto": "Login no funciona en el navegador",
+    "comentarios": [
+      {
+        "comentarioId": 1,
+        "mensaje": "Se revisó la documentación de la API",
+        "fecha": "2024-10-20",
+        "usuario": "Diego"
+      },
+      {
+        "comentarioId": 2,
+        "mensaje": "Se revisó la documentación de la API",
+        "fecha": "2024-10-20",
+        "usuario": "Cesar"
+      },
+      {
+        "comentarioId": 3,
+        "mensaje": "Se revisó la documentación de la API",
+        "fecha": "2024-10-20",
+        "usuario": "Luis"
+      }
+    ]
   },
   {
     "id": 2,
