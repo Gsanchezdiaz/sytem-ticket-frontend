@@ -1,62 +1,73 @@
 [
   {
     "id": 1,
-    "detalle": "Revisión del sistema de inventario",
-    "estado": "Completado",
-    "fechaRegistro": "2024-10-10"
+    "detalle": "Revisión de funcionalidad de login",
+    "estado": "Pendiente",
+    "fechaRegistro": "2024-10-20",
+    "asunto": "Login no funciona en el navegador"
   },
   {
     "id": 2,
-    "detalle": "Actualización de la base de datos",
-    "estado": "En Proceso",
-    "fechaRegistro": "2024-10-12"
+    "detalle": "Actualización de la página principal",
+    "estado": "En progreso",
+    "fechaRegistro": "2024-10-19",
+    "asunto": "Actualización página principal"
   },
   {
     "id": 3,
-    "detalle": "Migración del servidor",
-    "estado": "Pendiente",
-    "fechaRegistro": "2024-10-15"
+    "detalle": "Error en el sistema de notificaciones",
+    "estado": "Resuelto",
+    "fechaRegistro": "2024-10-18",
+    "asunto": "Notificaciones no enviadas"
   },
   {
     "id": 4,
-    "detalle": "Implementación de nueva funcionalidad",
-    "estado": "Completado",
-    "fechaRegistro": "2024-10-18"
+    "detalle": "Implementación de la API de pagos",
+    "estado": "Pendiente",
+    "fechaRegistro": "2024-10-17",
+    "asunto": "Implementación API de pagos"
   },
   {
     "id": 5,
-    "detalle": "Pruebas de calidad",
-    "estado": "En Proceso",
-    "fechaRegistro": "2024-10-20"
+    "detalle": "Pruebas de rendimiento del sistema",
+    "estado": "En progreso",
+    "fechaRegistro": "2024-10-16",
+    "asunto": "Pruebas de rendimiento"
   },
   {
     "id": 6,
     "detalle": "Revisión del sistema de inventario",
     "estado": "Completado",
-    "fechaRegistro": "2024-10-10"
+    "fechaRegistro": "2024-10-10",
+    "asunto": "Revisión Pruebas de rendimiento"
+    
   },
   {
     "id": 7,
     "detalle": "Actualización de la base de datos",
     "estado": "En Proceso",
-    "fechaRegistro": "2024-10-12"
+    "fechaRegistro": "2024-10-12",
+    "asunto": "Pruebas de rendimiento"
   },
   {
     "id": 8,
     "detalle": "Migración del servidor",
     "estado": "Pendiente",
-    "fechaRegistro": "2024-10-15"
+    "fechaRegistro": "2024-10-15",
+    "asunto": "Migración de rendimiento"
   },
   {
     "id": 9,
     "detalle": "Implementación de nueva funcionalidad",
     "estado": "Completado",
-    "fechaRegistro": "2024-10-18"
+    "fechaRegistro": "2024-10-18",
+    "asunto": "Pruebas de rendimiento"
   },
   {
     "id": 10,
     "detalle": "Pruebas de calidad",
     "estado": "En Proceso",
-    "fechaRegistro": "2024-10-20"
+    "fechaRegistro": "2024-10-20",
+    "asunto": "Pruebas de rendimiento"
   }
 ]
